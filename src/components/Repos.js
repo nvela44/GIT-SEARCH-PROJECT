@@ -11,7 +11,7 @@ class Repos extends Component {
     let self = this;
     fetch(
       `https://api.github.com/users/${this.props.params
-        .username}/repos?sort=updated`
+        .username}/repos?sort=updated&access_token=bdaec663803a76567ca120d7b13b510b845b4f6d`
     )
       .then(resp => resp.json())
       .then(repos => {

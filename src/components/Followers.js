@@ -24,7 +24,7 @@ class Followers extends Component {
     var page = this.state.page;
     fetch(
       `https://api.github.com/users/${this.props.params
-        .username}/followers?per_page=25&page=${page}`
+        .username}/followers?per_page=25&page=${page}&access_token=bdaec663803a76567ca120d7b13b510b845b4f6d`
     )
       .then(response => response.json())
       .then(payload => {

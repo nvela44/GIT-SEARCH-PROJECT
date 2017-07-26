@@ -20,7 +20,10 @@ class User extends React.Component {
   }
 
   fetchUser() {
-    fetch(`https://api.github.com/users/${this.props.params.username}`)
+    fetch(
+      `https://api.github.com/users/${this.props.params
+        .username}?access_token=bdaec663803a76567ca120d7b13b510b845b4f6d`
+    )
       .then(resp => resp.json())
       .then(user => {
         this.setState((prevState, props) => ({

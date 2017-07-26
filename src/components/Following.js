@@ -11,7 +11,8 @@ class Following extends Component {
     var self = this; // What's this?? Make sure you remember or understand what this line does
 
     fetch(
-      `https://api.github.com/users/${this.props.params.username}/following`
+      `https://api.github.com/users/${this.props.params
+        .username}/following?access_token=bdaec663803a76567ca120d7b13b510b845b4f6d`
     )
       .then(resp => resp.json())
       .then(following => {

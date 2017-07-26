@@ -66,8 +66,7 @@ button:hover {
 
 .user-info__avatar {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 100px;
   margin-right: 1em;
   float: left;
 }
@@ -120,8 +119,7 @@ button:hover {
 
 .github-usertag__avatar {
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 70px;
   margin-right: 0.5em;
   display: inline-block;
   vertical-align: middle;
